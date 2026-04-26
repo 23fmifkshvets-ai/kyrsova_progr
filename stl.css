@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    resize: none;
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+.score-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid #555;
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
