@@ -1,24 +1,5 @@
 let score = 0;
-
-function showSteps() {
-    const stepsDiv = document.getElementById("steps");
-
-    const steps = [
-        "Крок 1: i = 0 → вивід 0",
-        "Крок 2: i = 1 → вивід 1",
-        "Крок 3: i = 2 → вивід 2"
-    ];
-
-    stepsDiv.innerHTML = "";
-
-    steps.forEach(step => {
-        const p = document.createElement("p");
-        p.textContent = step;
-        stepsDiv.appendChild(p);
-    });
-}
-
-
+let answered1 = false;
 
 function checkAnswer() {
     const userAnswer = document.getElementById("answer").value.trim();
@@ -30,10 +11,16 @@ function checkAnswer() {
         .trim();
 
     if (normalized === "0 1 2") {
+
+        if (!answered1) {
+            score++;
+            answered1 = true;
+            updateScore();
+        }
+
         result.textContent = "✅ Правильно!";
         result.style.color = "lightgreen";
-        score++;
-        updateScore();
+
     } else {
         result.textContent = "❌ Неправильно. Правильна відповідь: 0 1 2";
         result.style.color = "red";
@@ -41,28 +28,25 @@ function checkAnswer() {
 }
 
 
+let answered2 = false;
+
 function checkFill() {
     const answer = document.getElementById("fillAnswer").value.trim().toLowerCase();
     const result = document.getElementById("fillResult");
 
     if (answer === "range") {
+
+        if (!answered2) {
+            score++;
+            answered2 = true;
+            updateScore();
+        }
+
         result.textContent = "✅ Правильно!";
         result.style.color = "lightgreen";
-        score++;
-        updateScore();
+
     } else {
         result.textContent = "❌ Неправильно. Правильна відповідь: range";
         result.style.color = "red";
     }
-}
-
-function updateScore() {
-    document.getElementById("score").textContent = score;
-}
-
-let answered1 = false;
-
-if (normalized === "0 1 2" && !answered1) {
-    score++;
-    answered1 = true;
 }
