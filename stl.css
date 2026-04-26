@@ -26,15 +26,18 @@ body {
 }
 
 textarea {
-    width: 300px;
-    height: 150px;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 8px;
-    resize: none;
-    background: #222;
-    color: white;
-    border: 1px solid #555;
+  width: 90%;
+  max-width: 400px;
+  height: 150px;
+
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  resize: none;
+
+  background: #222;
+  color: white;
+  border: 1px solid #555;
 }
 
 .score-box {
