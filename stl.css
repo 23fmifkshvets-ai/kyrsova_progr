@@ -26,7 +26,8 @@ body {
     border-radius: 10px;
 }
 
-.btn:hover {
+.btn:active,
+.btn:hover{
     background: #555;
 }
 
