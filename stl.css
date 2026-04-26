@@ -56,3 +56,15 @@ textarea {
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 600px) {
+  textarea {
+    width: 95%;
+    height: 180px;
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 18px;
+  }
+}
