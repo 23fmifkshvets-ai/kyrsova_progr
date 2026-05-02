@@ -119,6 +119,24 @@ button:hover {
     }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  .product-container {
+    padding: 12px;
+  }
+}
+
 @media (max-width: 600px) {
     .container {
         width: 95%;
@@ -136,4 +154,13 @@ button:hover {
     .result-line {
         font-size: 20px;
     }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 18px; /* збільшує ВСЕ */
+  }
+
+  button {
+    font-size: 1.1rem;
+  }
 }
