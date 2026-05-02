@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stl.css">
+    <title>LoopTrainer</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>LoopTrainer</h1>
+        <p>Тренажер для вивчення циклів Python</p>
+
+        <div class="menu">
+
+            <div class="menu-block">
+                <button class="btn" onclick="toggleMenu('theoryMenu')">📘 Теорія</button>
+                <div class="submenu" id="theoryMenu">
+                    <a href="/pgs/theo/theory-for.html" class="sub-btn">Цикл For</a>
+                    <a href="/pgs/theo/theory-while.html" class="sub-btn">Цикл While</a>
+                </div>
+            </div>
+
+            <div class="menu-block">
+                <button class="btn" onclick="toggleMenu('visualMenu')">🔍 Візуалізація</button>
+                <div class="submenu" id="visualMenu">
+                    <a href="/pgs/vis/visual-for.html" class="sub-btn">Цикл For</a>
+                    <a href="/pgs/vis/visual-while.html" class="sub-btn">Цикл While</a>
+                </div>
+            </div>
+
+            <div class="menu-block">
+                <button class="btn" onclick="toggleMenu('practiceMenu')">🧪 Практика</button>
+                <div class="submenu" id="practiceMenu">
+                    <a href="/pgs/pract/practice-for.html" class="sub-btn">Цикл For</a>
+                    <a href="/pgs/pract/practice-while.html" class="sub-btn">Цикл While</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ind.js"></script>
+</body>
+
+</html>
