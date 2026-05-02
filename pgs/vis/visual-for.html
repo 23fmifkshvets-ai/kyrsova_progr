@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Візуалізація циклів</title>
+    <link rel="stylesheet" href="../../stl2.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Візуалізація циклу for</h1>
+        <h2>
+            <pre>
+        for ... in range ()
+        print(...)</pre>
+        </h2>
+
+
+        <div class="controls">
+            <label>Тип циклу:</label>
+            <select id="mode" onchange="toggleInputs()">
+                <option value="1">range(stop)</option>
+                <option value="2">range(start, stop)</option>
+                <option value="3">range(start, stop, step)</option>
+            </select>
+
+            <label>Обери смайл, який буде у циклі замість " ... " :</label>
+            <select id="emoji">
+                <option>😏</option>
+                <option>🔥</option>
+                <option>💀</option>
+                <option>🐍</option>
+            </select>
+
+            <label>Кількість повторів (те значення, яке передається у дужки функції range() ):</label>
+            <input type="number" id="rangeInput" min="1" max="10">
+
+            <div id="extraInputs" style="display:none;">
+
+                <label>Start:</label>
+                <input type="number" id="startInput" min="-20" max="20">
+
+                <label>Stop:</label>
+                <input type="number" id="stopInput" min="-20" max="30">
+
+            </div>
+
+            <div id="stepBlock" style="display:none;">
+                <label>Step:</label>
+                <input type="number" id="stepInput" min="-10" max="10" value="1">
+            </div>
+
+            <button onclick="runVisualization()">Запустити</button>
+
+        </div>
+
+        <div id="output"></div>
+
+        <a href="../../index.html" class="btn">⬅ Назад</a>
+
+    </div>
+
+    <script src="../../sh2.js"></script>
+
+</body>
+
+</html>

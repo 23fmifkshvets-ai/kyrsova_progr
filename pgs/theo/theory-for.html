@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Теорія For</title>
+    <link rel="stylesheet" href="../../stl.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📘 Теорія циклів Python</h1>
+        <h2>🔹 Цикл for</h2>
+        <h2>🔹 Коли використовувати for?</h2>
+        <ul>
+            <li>Коли відома кількість повторень</li>
+            <li>Коли потрібно пройтись по списку</li>
+            <li>Коли є послідовність значень</li>
+        </ul>
+        <pre> for i in range(3): print(i) </pre>
+        <button onclick="showSteps1(this)" class="btn">▶ Показати виконання</button>
+        <div id="steps1"></div>
+        <br>
+        <hr>
+
+        <h2>🔹 Як працює range()</h2>
+        <p>
+            Функція <b>range(n)</b> створює послідовність чисел від 0 до n-1.
+        </p>
+
+        <pre>
+        range(5) → 0,1,2,3,4
+        </pre>
+
+        <hr>
+
+        <h2>🔹 ... range(start, stop)</h2>
+        <pre>
+        for i in range(1, 4):
+            print(i)
+        </pre>
+
+        <button onclick="showSteps2(this)" class="btn">▶ Показати виконання</button>
+        <div id="steps2"></div>
+        <br>
+
+        <hr>
+
+        <h2>🔹... range(start, stop, step)</h2>
+
+        <p>
+            Функція <b>range()</b> може мати три параметри:
+        </p>
+
+        <ul>
+            <li><b>start</b> — з якого числа починаємо</li>
+            <li><b>stop</b> — до якого (не включно)</li>
+            <li><b>step</b> — крок (через скільки збільшувати)</li>
+        </ul>
+
+        <h3>🔹 Приклад</h3>
+
+        <pre>
+        for i in range(0, 10, 2):
+             print(i)
+        </pre>
+
+        <button onclick="showSteps3(this)" class="btn">▶ Показати виконання</button>
+
+        <div id="steps3"></div>
+
+        <br>
+        <hr>
+        <a href="../../index.html" class="btn">⬅ Назад</a>
+    </div>
+    <script src="../../shh.js"></script>
+</body>
+
+</html>

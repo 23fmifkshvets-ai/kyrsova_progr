@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Теорія While</title>
+    <link rel="stylesheet" href="../../stl.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📘 Теорія циклів Python</h1>
+
+        <h2>🔹 Цикл while</h2>
+
+        <h2>🔹 Коли використовувати while?</h2>
+        <ul>
+            <li>Коли НЕ відома кількість повторень</li>
+            <li>Коли є умова виконання</li>
+            <li>Коли цикл залежить від логіки, а не від range()</li>
+        </ul>
+
+        <pre>
+            i = 0
+            while i < 3:
+                print(i)
+                i += 1
+        </pre>
+
+        <button onclick="showWhileSteps1(this)" class="btn">
+            ▶ Показати виконання
+        </button>
+
+        <div id="stepsWhile1"></div>
+
+        <br>
+        <hr>
+
+
+        <h2>🔹 Як працює while?</h2>
+
+        <p>
+            Цикл <b>while</b> виконується, поки умова є <b>True</b>.
+        </p>
+
+        <pre>
+            while умова:
+                код
+        </pre>
+
+        <p>
+            Якщо умова стає <b>False</b> — цикл зупиняється.
+        </p>
+
+        <hr>
+
+        <h2>🔹 Приклад з умовою</h2>
+
+        <pre>
+            i = 1
+            while i <= 3:
+                print(i)
+                i += 1
+        </pre>
+
+        <button onclick="showWhileSteps2(this)" class="btn">
+            ▶ Показати виконання
+        </button>
+
+        <div id="stepsWhile2"></div>
+
+        <br>
+        <hr>
+
+
+        <h2>🔹 Нескінченний цикл ⚠️</h2>
+
+        <p>
+            Якщо не змінювати змінну — цикл може стати нескінченним.
+        </p>
+
+        <pre>
+            i = 0
+            while i < 3:
+                print(i)
+                # ❌ забули i += 1
+        </pre>
+
+        <p style="color: orange;">
+            ⚠ Такий код буде виконуватись безкінечно!
+        </p>
+
+        <hr>
+
+
+        <a href="../../index.html" class="btn">⬅ Назад</a>
+
+    </div>
+
+    <script src="../../shh.js"></script>
+</body>
+
+</html>

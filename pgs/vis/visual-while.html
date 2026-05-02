@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Візуалізація циклу while</title>
+    <link rel="stylesheet" href="../../stl2.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Візуалізація циклу while</h1>
+
+        <h2>
+            <pre>
+            i = ...
+            while i < ...:
+                print(...)
+                i += ...
+            </pre>
+        </h2>
+
+        <div class="controls">
+
+            <label>Обери смайл:</label>
+            <select id="emoji">
+                <option>😏</option>
+                <option>🔥</option>
+                <option>💀</option>
+                <option>🐍</option>
+            </select>
+
+            <label>Початкове значення i:</label>
+            <input type="number" id="startInput" value="0">
+
+            <label>Умова (i < ?):</label>
+                    <input type="number" id="limitInput" value="5">
+
+                    <label>Тип умови:</label>
+                    <select id="conditionType">
+                        <option value="<">&lt; (менше)</option>
+                        <option value="<=">&le; (менше або рівно)</option>
+                        <option value=">">&gt; (більше)</option>
+                        <option value=">=">&ge; (більше або рівно)</option>
+                    </select>
+
+                    <label>Крок (i += ?):</label>
+                    <input type="number" id="stepInput" value="1">
+
+                    <button onclick="runWhileVisualization()">Запустити</button>
+
+        </div>
+
+        <div id="output"></div>
+
+        <a href="../../index.html" class="btn"> Назад</a>
+
+    </div>
+
+    <script src="../../sh3.js"></script>
+
+</body>
+
+</html>
