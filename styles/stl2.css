@@ -157,7 +157,7 @@ button:hover {
 }
 @media (max-width: 480px) {
   html {
-    font-size: 18px; /* збільшує ВСЕ */
+    font-size: 18px;
   }
 
   button {
