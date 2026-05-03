@@ -48,6 +48,8 @@ async function loginUser() {
 
         localStorage.setItem("isLogged", "true");
 
+        localStorage.setItem("userName", login);
+
         updateUI();
     } else if (data.status === "wrong_password") {
         authResult.innerText = "Неправильний пароль";
@@ -125,7 +127,6 @@ async function submitRegister() {
         localStorage.setItem("userSurname", data.surname);
         localStorage.setItem("isLogged", "true");
 
-        // 🔥 головне
         updateUI();
 
         setTimeout(() => {
