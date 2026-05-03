@@ -3,8 +3,11 @@ function showAvatar() {
 
     const name = localStorage.getItem("userName") || "";
     const surname = localStorage.getItem("userSurname") || "";
-
-    if (!name) return;
+    
+     if (!name) {
+        avatar.style.display = "none";
+        return;
+     }
 
     avatar.style.display = "flex";
     avatar.innerText = (name[0] + (surname[0] || "")).toUpperCase();
@@ -176,21 +179,25 @@ function logoutUser() {
 
 
 function updateUI() {
-    const isLogged = localStorage.getItem("isLogged");
+    const isLogged = localStorage.getItem("isLogged") === "true";
 
     const authBlock = document.getElementById("authBlock");
     const menu = document.getElementById("mainMenu");
     const logoutBtn = document.getElementById("logoutBtn");
+    const avatar = document.getElementById("avatar");
 
-    if (isLogged === "true") {
+    if (isLogged) {
         authBlock.style.display = "none";
         menu.style.display = "block";
-        logoutBtn.style.display = "inline-block";
-        showAvatar();
+        logoutBtn.style.display = "block";
+
+        showAvatar(); 
     } else {
         authBlock.style.display = "flex";
         menu.style.display = "none";
         logoutBtn.style.display = "none";
+
+        avatar.style.display = "none"; 
     }
 }
 
