@@ -10,20 +10,129 @@ body {
     margin-top: 100px;
 }
 
+.avatar {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: #4CAF50;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin: 0 auto 10px;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.login-box input {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+    width: 180px;
+}
+
+.login-box input::placeholder {
+    color: #777;
+}
+
+.login-box input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #1a1a1a inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+button,
+.btn,
+.sub-btn {
+    background: #2a2a2a;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+button:hover,
+.btn:hover,
+.sub-btn:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+    transform: translateY(-2px);
+    background: #1f1f1f;
+}
+
+
+button:active,
+.btn:active,
+.sub-btn:active {
+    transform: scale(0.97);
+}
+
+
 .btn {
     display: block;
     width: 200px;
     margin: 20px auto;
-    padding: 15px;
-    background: #333;
-    color: white;
-    text-decoration: none;
+}
+
+#mainMenu {
+    display: none;
+}
+
+#logoutBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 12px 20px;
+    background: #2a2a2a;
     border-radius: 10px;
 }
 
-.btn:hover {
-    background: #555;
+.forgot {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 5px;
 }
+
+.forgot:hover {
+    color: #4CAF50;
+}
+
+#authResult {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
 
 textarea {
     width: 300px;
@@ -51,20 +160,12 @@ pre {
     max-height: 200px;
 }
 
+
 .sub-btn {
     display: block;
     width: 180px;
     margin: 10px auto;
     padding: 10px;
-
-    background: #222;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-.sub-btn:hover {
-    background: #444;
 }
 
 .menu-block {
@@ -93,4 +194,37 @@ ul {
     margin: 0 auto;
     list-style: none;
     text-align: left;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content input {
+    background: #222;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.close {
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 20px;
 }
