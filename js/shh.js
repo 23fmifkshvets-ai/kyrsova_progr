@@ -303,6 +303,7 @@ function checkAnswer8() {
         result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Правильна відповідь: 0 1 2";
+        result.style.color = "red";
     }
 }
 
