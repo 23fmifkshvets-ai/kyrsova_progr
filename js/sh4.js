@@ -23,6 +23,7 @@ function checkAnswer() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Правильна відповідь: 0 1 2";
         result.style.color = "red";
@@ -42,6 +43,7 @@ function checkFill() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Правильна відповідь: 1";
         result.style.color = "red";
@@ -61,6 +63,7 @@ function checkAnswer2() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Правильна відповідь: 1 2 3";
         result.style.color = "red";
@@ -80,6 +83,7 @@ function checkAnswer3() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Прааильна відповідь: 0 2 4";
         result.style.color = "red";
@@ -99,6 +103,7 @@ function checkAnswer4() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Прааильна відповідь: 2 3 4 5 6";
         result.style.color = "red";
@@ -118,6 +123,7 @@ function checkAnswer5() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+       result.style.color = "lightgreen"; 
     } else {
         result.textContent = "❌ Правильна відповідь: 5 4 3 2 1";
         result.style.color = "red"; 
@@ -136,6 +142,7 @@ function checkAnswer6() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Правильна відповідь: 3 6 9";
         result.style.color = "red";
@@ -154,6 +161,7 @@ function checkAnswer7() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+       result.style.color = "lightgreen"; 
     } else {
         result.textContent = "❌ Правильнв відповідь: 10 8 6 4 2";
         result.style.color = "red";
@@ -172,6 +180,7 @@ function checkFill3() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Правильна відповідь: 2";
         result.style.color = "red";
@@ -190,6 +199,7 @@ function checkAnswer8() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
         result.textContent = "❌ Прааильна відповідь: 1 2 3 4 5";
         result.style.color = "red";
