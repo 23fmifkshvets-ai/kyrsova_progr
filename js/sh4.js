@@ -25,6 +25,7 @@ function checkAnswer() {
         result.textContent = "✅ Правильно!";
     } else {
         result.textContent = "❌ Правильна відповідь: 0 1 2";
+        result.style.color = "red";
     }
 }
 
@@ -43,6 +44,7 @@ function checkFill() {
         result.textContent = "✅ Правильно!";
     } else {
         result.textContent = "❌ Правильна відповідь: 1";
+        result.style.color = "red";
     }
 }
 
@@ -60,7 +62,8 @@ function checkAnswer2() {
         }
         result.textContent = "✅ Правильно!";
     } else {
-        result.textContent = "❌ 1 2 3";
+        result.textContent = "❌ Правильна відповідь: 1 2 3";
+        result.style.color = "red";
     }
 }
 
@@ -78,7 +81,8 @@ function checkAnswer3() {
         }
         result.textContent = "✅ Правильно!";
     } else {
-        result.textContent = "❌ 0 2 4";
+        result.textContent = "❌ Прааильна відповідь: 0 2 4";
+        result.style.color = "red";
     }
 }
 
@@ -96,7 +100,8 @@ function checkAnswer4() {
         }
         result.textContent = "✅ Правильно!";
     } else {
-        result.textContent = "❌ 2 3 4 5 6";
+        result.textContent = "❌ Прааильна відповідь: 2 3 4 5 6";
+        result.style.color = "red";
     }
 }
 
@@ -114,7 +119,8 @@ function checkAnswer5() {
         }
         result.textContent = "✅ Правильно!";
     } else {
-        result.textContent = "❌ 5 4 3 2 1";
+        result.textContent = "❌ Правильна відповідь: 5 4 3 2 1";
+        result.style.color = "red"; 
     }
 }
 
@@ -131,7 +137,8 @@ function checkAnswer6() {
         }
         result.textContent = "✅ Правильно!";
     } else {
-        result.textContent = "❌ 3 6 9";
+        result.textContent = "❌ Правильна відповідь: 3 6 9";
+        result.style.color = "red";
     }
 }
 
@@ -148,7 +155,8 @@ function checkAnswer7() {
         }
         result.textContent = "✅ Правильно!";
     } else {
-        result.textContent = "❌ 10 8 6 4 2";
+        result.textContent = "❌ Правильнв відповідь: 10 8 6 4 2";
+        result.style.color = "red";
     }
 }
 
@@ -166,6 +174,7 @@ function checkFill3() {
         result.textContent = "✅ Правильно!";
     } else {
         result.textContent = "❌ Правильна відповідь: 2";
+        result.style.color = "red";
     }
 }
 
@@ -182,7 +191,8 @@ function checkAnswer8() {
         }
         result.textContent = "✅ Правильно!";
     } else {
-        result.textContent = "❌ 1 2 3 4 5";
+        result.textContent = "❌ Прааильна відповідь: 1 2 3 4 5";
+        result.style.color = "red";
     }
 }
 
