@@ -261,8 +261,10 @@ function checkAnswer6() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
-        result.textContent = "❌ 2 4 6 8";
+        result.textContent = "❌ Правильна відповідь: 2 4 6 8";
+        result.style.color = "red";
     }
 }
 
@@ -278,8 +280,10 @@ function checkAnswer7() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
-        result.textContent = "❌ 0 0 1 3 2 6";
+        result.textContent = "❌ Правильна відповідь: 0 0 1 3 2 6";
+        result.style.color = "red";
     }
 }
 
@@ -296,8 +300,9 @@ function checkAnswer8() {
             updateScore();
         }
         result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
     } else {
-        result.textContent = "❌ 0 1 2";
+        result.textContent = "❌ Правильна відповідь: 0 1 2";
     }
 }
 
