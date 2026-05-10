@@ -101,7 +101,7 @@ async function submitRegister() {
     const regResult = document.getElementById("regResult");
 
     if (!regLogin.value || !regPassword.value || !regName.value) {
-        regResult.innerText = "Заповни обов'язкові поля";
+        regResult.innerText = "Заповніть всі поля";
         return;
     }
 
@@ -139,7 +139,7 @@ async function submitRegister() {
     } else if (result.status === "user_exists") {
         regResult.innerText = "Такий логін вже існує";
     } else if (result.status === "empty_fields") {
-        regResult.innerText = "Заповни всі поля";
+        regResult.innerText = "Заповніть всі поля";
     } else {
         regResult.innerText = "Помилка";
     }
@@ -216,7 +216,7 @@ async function resetPassword() {
     const result = document.getElementById("resetResult");
 
     if (!login || !newPassword) {
-        result.innerText = "Заповни поля";
+        result.innerText = "Заповніть поля";
         return;
     }
 
