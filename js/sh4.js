@@ -134,6 +134,63 @@ function checkAnswer6() {
     const val = normalize(document.getElementById("answer6").value);
     const result = document.getElementById("result6");
 
+    if (val === "2 4 6 8") {
+        if (!answered8) {
+            score++;
+            answered8 = true;
+            localStorage.setItem("a8", true);
+            updateScore();
+        }
+        result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
+    } else {
+        result.textContent = "❌ Правильна відповідь: 2 4 6 8";
+        result.style.color = "red";
+    }
+}
+
+function checkAnswer7() {
+    const val = normalize(document.getElementById("answer7").value);
+    const result = document.getElementById("result7");
+
+    if (val === "0 0 1 3 2 6") {
+        if (!answered9) {
+            score++;
+            answered9 = true;
+            localStorage.setItem("a9", true);
+            updateScore();
+        }
+        result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
+    } else {
+        result.textContent = "❌ Правильна відповідь: 0 0 1 3 2 6";
+        result.style.color = "red";
+    }
+}
+
+
+function checkAnswer8() {
+    const val = normalize(document.getElementById("answer8").value);
+    const result = document.getElementById("result8");
+
+    if (val === "0 1 2") {
+        if (!answered10) {
+            score++;
+            answered10 = true;
+            localStorage.setItem("a10", true);
+            updateScore();
+        }
+        result.textContent = "✅ Правильно!";
+        result.style.color = "lightgreen";
+    } else {
+        result.textContent = "❌ Правильна відповідь: 0 1 2";
+        result.style.color = "red";
+    }
+}
+function checkAnswer6() {
+    const val = normalize(document.getElementById("answer6").value);
+    const result = document.getElementById("result6");
+
     if (val === "3 6 9") {
         if (!answers[6]) {
             score++;
