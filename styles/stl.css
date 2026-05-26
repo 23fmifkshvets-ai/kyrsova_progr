@@ -188,8 +188,20 @@ pre {
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+hr {
+    width: 50%;
+}
+.expl{
+    width: 40%;
+    margin: 0 auto;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    padding: 15px 0;
+}
 
 ul {
+    padding: 10px 0;
     width: 300px;
     margin: 0 auto;
     list-style: none;
@@ -233,6 +245,8 @@ ul {
 @media (max-width: 600px) {
 
     .container {
+        width: 95%;
+        margin: 0 auto;
         margin-top: 40px;
         padding: 0 15px;
     }
@@ -243,6 +257,12 @@ ul {
 
     p {
         font-size: 14px;
+    }
+    .expl{
+        width: 90%;
+    }
+    hr {
+        width: 90%;
     }
     
     .login-box {
