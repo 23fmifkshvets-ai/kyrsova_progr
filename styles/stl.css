@@ -240,7 +240,14 @@ ul {
     align-self: flex-end;
     font-size: 20px;
 }
-
+@media (max-width: 1024px){
+      .expl{
+        width: 60%;
+    }
+    hr {
+        width: 70%;
+    }  
+}
 
 @media (max-width: 600px) {
 
